@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Условие if -->
+    {% if title%}
+        <title>{{title}} - app</title>
+    {%else%}
+         <title>Welcome - app</title>
+    {%endif%}
+</head>
+<body>
+<div> app: <a href="/index">Home</a> </div>
+<hr>
+{%block content%} {% endblock %}
+</body>
+</html>
